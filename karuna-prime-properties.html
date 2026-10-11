@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karuna Prime Properties — Shops, Flats, Plots &amp; Villas in Delhi NCR</title>
+<meta name="description" content="Karuna Prime Properties, Delhi NCR. Buy, sell, invest in shops, flats, plots and villas. Founder: Raghvendra Singh Chauhan. Call 8800492022.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#050914; --navy:#0a1226; --gold:#e3b95f; --gold-2:#f5dd9d; --ivory:#f5f1e8; --mut:#9aa3b5; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--bg); color:var(--ivory); font-family:'Inter',sans-serif; overflow-x:hidden; }
+  ::selection { background:var(--gold); color:#000; }
+  .vignette { position:fixed; inset:0; pointer-events:none; z-index:900; box-shadow:inset 0 0 200px rgba(0,0,0,.7); }
+
+  /* NAV */
+  header { position:fixed; top:0; left:0; right:0; z-index:1000; display:flex; justify-content:space-between; align-items:center; padding:18px 38px; transition:.35s; }
+  header.sc { background:rgba(5,9,20,.88); backdrop-filter:blur(10px); padding:12px 38px; box-shadow:0 8px 30px rgba(0,0,0,.4); }
+  .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .brand .mark { width:42px; height:42px; border:1.5px solid var(--gold); border-radius:6px; display:flex; align-items:center; justify-content:center; font-family:'Cormorant Garamond',serif; font-weight:700; font-size:1.1rem; color:var(--gold); letter-spacing:1px; }
+  .brand .tx { line-height:1.05; }
+  .brand .tx b { display:block; font-family:'Cormorant Garamond',serif; font-size:1.25rem; color:var(--gold); font-weight:700; }
+  .brand .tx small { font-size:.58rem; letter-spacing:3px; text-transform:uppercase; color:var(--ivory); opacity:.85; }
+  header nav a { color:rgba(245,241,232,.8); text-decoration:none; font-size:.7rem; letter-spacing:3px; text-transform:uppercase; margin-left:26px; transition:.3s; }
+  header nav a:hover { color:var(--gold); }
+  @media (max-width:720px) { header nav a:not(.call) { display:none; } }
+  header nav a.call { border:1px solid var(--gold); color:var(--gold); padding:9px 18px; border-radius:50px; }
+  header nav a.call:hover { background:var(--gold); color:#000; }
+
+  /* HERO */
+  .hero { height:100vh; min-height:640px; position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .hero .bg { position:absolute; inset:-6%; background:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1900&q=80') center/cover; filter:brightness(.4) saturate(1.1); animation:kb 18s ease-in-out infinite alternate; }
+  @keyframes kb { from { transform:scale(1); } to { transform:scale(1.14) translateY(-2%); } }
+  .hero .shade { position:absolute; inset:0; background:radial-gradient(ellipse at center, transparent 15%, rgba(5,9,20,.92) 100%), linear-gradient(transparent 55%, var(--bg)); }
+  .hero .inner { position:relative; z-index:2; text-align:center; padding:0 20px; }
+  .over { font-size:.68rem; letter-spacing:7px; text-transform:uppercase; color:var(--gold); opacity:0; animation:fu 1s .2s both; }
+  .hero h1 { font-family:'Cormorant Garamond',serif; font-weight:600; font-size:clamp(2.7rem,10vw,6.6rem); line-height:1; margin:16px 0 8px; }
+  .hero h1 .ch { display:inline-block; opacity:0; transform:translateY(70px) rotateX(50deg); animation:ci .9s cubic-bezier(.2,.8,.2,1) both; }
+  .gold-text { background:linear-gradient(110deg,#b98a3a 10%,var(--gold-2) 40%,#b98a3a 65%,var(--gold) 90%); background-size:200% 100%; -webkit-background-clip:text; background-clip:text; color:transparent; animation:sh 5s linear infinite; }
+  @keyframes sh { to { background-position:-200% 0; } }
+  @keyframes ci { to { opacity:1; transform:none; } }
+  @keyframes fu { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:none; } }
+  .hero .tag { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:clamp(1.1rem,2.6vw,1.6rem); color:var(--gold-2); letter-spacing:2px; opacity:0; animation:fu 1s 1.5s both; }
+  .hero p { max-width:52ch; margin:20px auto 34px; color:#cfd3dc; font-weight:300; opacity:0; animation:fu 1s 1.7s both; }
+  .btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; opacity:0; animation:fu 1s 1.9s both; }
+  .btn { display:inline-flex; align-items:center; gap:12px; text-decoration:none; font-weight:600; font-size:.78rem; letter-spacing:2.5px; text-transform:uppercase; padding:17px 38px; border-radius:60px; transition:.35s; }
+  .btn-gold { background:linear-gradient(120deg,var(--gold),var(--gold-2)); color:#0a0a08; box-shadow:0 16px 44px rgba(227,185,95,.35); }
+  .btn-gold:hover { transform:translateY(-5px) scale(1.03); box-shadow:0 24px 64px rgba(227,185,95,.5); }
+  .btn-line { border:1px solid rgba(245,241,232,.5); color:var(--ivory); }
+  .btn-line:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-4px); }
+  .btn svg { width:18px; height:18px; fill:currentColor; }
+  .mouse { position:absolute; bottom:30px; left:50%; transform:translateX(-50%); z-index:2; width:26px; height:42px; border:1.5px solid rgba(245,241,232,.5); border-radius:14px; }
+  .mouse::after { content:''; position:absolute; top:8px; left:50%; width:4px; height:8px; margin-left:-2px; border-radius:2px; background:var(--gold); animation:wh 1.6s ease-in-out infinite; }
+  @keyframes wh { 0%,100% { transform:translateY(0); opacity:1; } 55% { transform:translateY(14px); opacity:.2; } }
+
+  /* RIBBON */
+  .ribbon { position:relative; z-index:3; transform:rotate(-1.4deg); margin:-26px -10px 0; background:linear-gradient(90deg,var(--gold),var(--gold-2),var(--gold)); color:#0a0a08; overflow:hidden; padding:13px 0; box-shadow:0 12px 40px rgba(227,185,95,.25); }
+  .ribbon .track { display:flex; width:max-content; animation:mq 24s linear infinite; }
+  .ribbon span { font-family:'Cormorant Garamond',serif; font-weight:700; font-size:1rem; letter-spacing:4px; text-transform:uppercase; padding:0 28px; white-space:nowrap; }
+  @keyframes mq { to { transform:translateX(-50%); } }
+
+  /* HELIX */
+  .helix { height:420vh; position:relative; }
+  .stage { position:sticky; top:0; height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; perspective:1400px; overflow:hidden; }
+  .stage .cap { text-align:center; margin-bottom:3vh; margin-top:7vh; z-index:5; }
+  .stage .cap .k { font-size:.65rem; letter-spacing:7px; text-transform:uppercase; color:var(--gold); }
+  .stage .cap h2 { font-family:'Cormorant Garamond',serif; font-weight:600; font-size:clamp(1.5rem,3.4vw,2.5rem); margin-top:6px; }
+  .ring { position:relative; width:0; transform-style:preserve-3d; will-change:transform; }
+  .est { position:absolute; left:calc(var(--w) / -2); top:calc(var(--h) / -2); width:var(--w); height:var(--h); transform-style:preserve-3d; backface-visibility:hidden; --w:min(280px,58vw); --h:38vh; }
+  .est .frame { position:absolute; inset:0; border-radius:8px; overflow:hidden; box-shadow:0 40px 90px rgba(0,0,0,.6), 0 0 0 1px rgba(227,185,95,.3); background:#0a1226; }
+  .est img { width:100%; height:100%; object-fit:cover; display:block; filter:brightness(.92); }
+  .est .lab { position:absolute; left:0; right:0; bottom:0; padding:48px 18px 16px; background:linear-gradient(transparent, rgba(4,7,16,.95)); }
+  .est .lab em { font-family:'Cormorant Garamond',serif; font-style:italic; color:var(--gold); font-size:.85rem; letter-spacing:2px; }
+  .est .lab h3 { font-family:'Cormorant Garamond',serif; font-weight:700; font-size:1.5rem; letter-spacing:2px; text-transform:uppercase; }
+  .est .lab p { font-size:.74rem; color:#c5cad6; font-weight:300; margin-top:3px; }
+  .now { margin-top:9vh; z-index:5; text-align:center; height:3.4em; }
+  .now .num { font-family:'Cormorant Garamond',serif; font-style:italic; color:rgba(227,185,95,.65); font-size:1rem; letter-spacing:3px; }
+  .now .nm { font-family:'Cormorant Garamond',serif; font-weight:600; font-size:clamp(1.4rem,4vw,2.4rem); letter-spacing:3px; text-transform:uppercase; }
+  .stage .bar { position:absolute; bottom:30px; left:50%; transform:translateX(-50%); width:min(280px,60vw); height:1px; background:rgba(245,241,232,.15); }
+  .stage .bar b { display:block; height:100%; width:0; background:linear-gradient(90deg,var(--gold),var(--gold-2)); }
+
+  /* SERVICES GRID */
+  .sec { padding:110px 24px; position:relative; }
+  .wrap { max-width:1150px; margin:0 auto; }
+  .head { text-align:center; margin-bottom:56px; }
+  .head .k { font-size:.65rem; letter-spacing:7px; text-transform:uppercase; color:var(--gold); }
+  .head h2 { font-family:'Cormorant Garamond',serif; font-weight:600; font-size:clamp(1.9rem,4.6vw,3.2rem); margin-top:8px; line-height:1.15; }
+  .head h2 em { color:var(--gold); font-style:italic; }
+  .head .rule { width:60px; height:2px; background:var(--gold); margin:18px auto 0; }
+  .cats { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:24px; }
+  .cat { background:linear-gradient(160deg,#0e1830,#091022); border:1px solid rgba(227,185,95,.22); border-radius:16px; overflow:hidden; transition:.4s; }
+  .cat:hover { transform:translateY(-10px); border-color:var(--gold); box-shadow:0 26px 60px rgba(0,0,0,.5), 0 0 40px rgba(227,185,95,.12); }
+  .cat .ph { height:180px; overflow:hidden; }
+  .cat .ph img { width:100%; height:100%; object-fit:cover; transition:transform .7s; display:block; }
+  .cat:hover .ph img { transform:scale(1.1); }
+  .cat .bd { padding:24px 22px 28px; }
+  .cat h3 { font-family:'Cormorant Garamond',serif; font-size:1.7rem; color:var(--gold); letter-spacing:2px; text-transform:uppercase; }
+  .cat p { color:#b7bdcb; font-size:.92rem; font-weight:300; margin:8px 0 18px; }
+  .cat a { color:var(--ivory); text-decoration:none; font-size:.7rem; letter-spacing:2.5px; text-transform:uppercase; border-bottom:1px solid var(--gold); padding-bottom:4px; transition:.3s; }
+  .cat a:hover { color:var(--gold); }
+
+  /* WHY */
+  .why { background:linear-gradient(180deg,var(--bg),#08102a 50%,var(--bg)); }
+  .whyg { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+  .w { text-align:center; padding:30px 18px; border:1px solid rgba(227,185,95,.16); border-radius:14px; background:rgba(255,255,255,.02); transition:.35s; }
+  .w:hover { border-color:var(--gold); background:rgba(227,185,95,.05); transform:translateY(-6px); }
+  .w .ic { width:54px; height:54px; margin:0 auto 16px; border-radius:50%; border:1.5px solid var(--gold); display:flex; align-items:center; justify-content:center; }
+  .w .ic svg { width:24px; height:24px; fill:var(--gold); }
+  .w h4 { font-family:'Cormorant Garamond',serif; font-size:1.15rem; letter-spacing:2px; text-transform:uppercase; color:var(--ivory); }
+  .w p { font-size:.82rem; color:var(--mut); margin-top:6px; font-weight:300; }
+
+  /* FOUNDER */
+  .founder { text-align:center; padding:120px 24px; position:relative; overflow:hidden; }
+  .founder::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 50% 50%, rgba(227,185,95,.1), transparent 60%); }
+  .founder .in { position:relative; max-width:760px; margin:0 auto; border:1px solid rgba(227,185,95,.35); border-radius:20px; padding:56px 28px; background:rgba(8,14,32,.7); }
+  .founder .k { font-size:.65rem; letter-spacing:7px; text-transform:uppercase; color:var(--gold); }
+  .founder h2 { font-family:'Cormorant Garamond',serif; font-weight:700; font-size:clamp(1.8rem,5.5vw,3.4rem); letter-spacing:3px; text-transform:uppercase; margin:12px 0 4px; }
+  .founder .role { color:var(--mut); letter-spacing:2px; font-size:.85rem; }
+  .founder blockquote { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:clamp(1.2rem,2.8vw,1.7rem); color:var(--gold-2); margin-top:28px; line-height:1.4; }
+
+  /* REVEAL */
+  .rv { opacity:0; transform:translateY(46px); transition:opacity .9s cubic-bezier(.2,.8,.2,1), transform .9s cubic-bezier(.2,.8,.2,1); }
+  .rv.vis { opacity:1; transform:none; }
+
+  /* CONTACT */
+  .contact { position:relative; padding:140px 24px 120px; text-align:center; overflow:hidden; }
+  .orb { position:absolute; border-radius:50%; filter:blur(90px); opacity:.5; animation:ob 12s ease-in-out infinite alternate; }
+  .o1 { width:420px; height:420px; background:rgba(227,185,95,.26); top:-90px; left:-120px; }
+  .o2 { width:380px; height:380px; background:rgba(50,80,160,.5); bottom:-100px; right:-120px; animation-delay:-6s; }
+  @keyframes ob { to { transform:translate(70px,50px) scale(1.2); } }
+  .contact .in { position:relative; z-index:2; }
+  .contact h2 { font-family:'Cormorant Garamond',serif; font-weight:600; font-size:clamp(2.2rem,7vw,4.6rem); line-height:1.08; }
+  .contact h2 span { display:block; }
+  .contact p { color:var(--mut); max-width:46ch; margin:22px auto 40px; font-weight:300; }
+  .phone { margin-top:30px; font-family:'Cormorant Garamond',serif; font-size:clamp(1.6rem,4vw,2.4rem); letter-spacing:3px; color:var(--gold); }
+  .phone small { display:block; font-family:'Inter',sans-serif; font-size:.62rem; letter-spacing:5px; color:var(--mut); text-transform:uppercase; margin-bottom:6px; }
+  .phone a { color:inherit; text-decoration:none; }
+  .strip { margin-top:50px; font-size:.7rem; letter-spacing:6px; color:var(--gold-2); text-transform:uppercase; }
+  footer { padding:34px 24px; text-align:center; color:var(--mut); font-size:.65rem; letter-spacing:3px; text-transform:uppercase; border-top:1px solid rgba(227,185,95,.14); }
+
+  /* FLOATING WHATSAPP */
+  .wa-float { position:fixed; bottom:24px; right:24px; z-index:2000; width:62px; height:62px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 30px rgba(37,211,102,.5); animation:pl 2.6s infinite; }
+  .wa-float svg { width:32px; height:32px; fill:#fff; }
+  @keyframes pl { 0% { box-shadow:0 0 0 0 rgba(37,211,102,.5); } 70% { box-shadow:0 0 0 18px rgba(37,211,102,0); } 100% { box-shadow:0 0 0 0 rgba(37,211,102,0); } }
+</style>
+</head>
+<body>
+<div class="vignette"></div>
+
+<header id="hd">
+  <a class="brand" href="#top">
+    <span class="mark">KP</span>
+    <span class="tx"><b>Karuna</b><small>Prime Properties</small></span>
+  </a>
+  <nav>
+    <a href="#estates">Properties</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+    <a class="call" href="tel:+918800492022">Call Now</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="bg"></div><div class="shade"></div>
+  <div class="inner">
+    <div class="over">Delhi NCR — Your Trust, Our Commitment</div>
+    <h1 id="title"></h1>
+    <div class="tag">We build spaces, you build memories.</div>
+    <p>Shops, flats, plots and villas in prime Delhi NCR locations. Clear titles, honest deals, and a hassle-free process from first visit to final handover.</p>
+    <div class="btns">
+      <a class="btn btn-gold" href="https://wa.me/918800492022?text=Hello%20Karuna%20Prime%20Properties%2C%20I%20am%20interested%20in%20a%20property.%20Please%20share%20options." target="_blank">
+        <svg viewBox="0 0 32 32"><path d="M16 2.7C8.7 2.7 2.8 8.6 2.8 15.9c0 2.6.7 5 2 7.1L2.7 29.3l6.5-1.7c2 1.1 4.3 1.7 6.7 1.7 7.3 0 13.2-5.9 13.2-13.2S23.2 2.7 16 2.7zm7.7 18.5c-.3.9-1.8 1.8-2.6 1.9-.7.1-1.6.2-5.1-1.5-4.2-2-6.9-6.5-7.1-6.8-.2-.3-1.7-2.3-1.7-4.4 0-2.1 1.1-3.1 1.5-3.5.4-.4.8-.5 1.1-.5h.8c.3 0 .6-.1 1 .7.3.8 1.1 2.8 1.2 3 .1.2.2.4 0 .7-.1.3-.2.5-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.8 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.8-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.4 1.1 2.8 1.3.4.2.7.3.8.5.1.2.1.8-.2 1.6z"/></svg>
+        WhatsApp Us</a>
+      <a class="btn btn-line" href="tel:+918800492022">Call 88004 92022</a>
+    </div>
+  </div>
+  <div class="mouse"></div>
+</section>
+
+<div class="ribbon"><div class="track">
+  <span>Buy</span><span>✦</span><span>Sell</span><span>✦</span><span>Invest</span><span>✦</span><span>Grow</span><span>✦</span><span>Karuna Prime Properties</span><span>✦</span>
+  <span>Buy</span><span>✦</span><span>Sell</span><span>✦</span><span>Invest</span><span>✦</span><span>Grow</span><span>✦</span><span>Karuna Prime Properties</span><span>✦</span>
+</div></div>
+
+<section class="helix" id="estates">
+  <div class="stage">
+    <div class="cap">
+      <div class="k">Our Properties</div>
+      <h2>Spaces for every dream</h2>
+    </div>
+    <div class="ring" id="ring"></div>
+    <div class="now"><div class="num" id="nowNum">01 / 06</div><div class="nm" id="nowName">Shop</div></div>
+    <div class="bar"><b id="bar"></b></div>
+  </div>
+</section>
+
+<section class="sec" id="cats">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">What We Offer</div>
+      <h2>Shop · Flat · Plot · <em>Villa</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="cats">
+      <div class="cat rv">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=75" alt="Commercial shop"></div>
+        <div class="bd"><h3>Shop</h3><p>Prime commercial spaces for your business success.</p><a href="https://wa.me/918800492022?text=I%20am%20interested%20in%20a%20Shop" target="_blank">Enquire →</a></div>
+      </div>
+      <div class="cat rv">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=75" alt="Modern flat"></div>
+        <div class="bd"><h3>Flat</h3><p>Modern flats with comfort, convenience and luxury.</p><a href="https://wa.me/918800492022?text=I%20am%20interested%20in%20a%20Flat" target="_blank">Enquire →</a></div>
+      </div>
+      <div class="cat rv">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=75" alt="Residential plot"></div>
+        <div class="bd"><h3>Plot</h3><p>Premium plots in prime locations for a bright future.</p><a href="https://wa.me/918800492022?text=I%20am%20interested%20in%20a%20Plot" target="_blank">Enquire →</a></div>
+      </div>
+      <div class="cat rv">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=75" alt="Luxury villa"></div>
+        <div class="bd"><h3>Villa</h3><p>Luxury villas designed for a premium lifestyle.</p><a href="https://wa.me/918800492022?text=I%20am%20interested%20in%20a%20Villa" target="_blank">Enquire →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec why" id="why">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="k">Why Choose Us</div>
+      <h2>Why choose <em>Karuna Prime Properties?</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="whyg">
+      <div class="w rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1 14-4-4 1.4-1.4L11 13.2l4.6-4.6L17 10l-6 6z"/></svg></div><h4>Trusted Developer</h4><p>Committed to quality and transparency.</p></div>
+      <div class="w rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div><h4>Prime Locations</h4><p>Best connectivity, high appreciation.</p></div>
+      <div class="w rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8v4h2V3h-8v2h4l-6 6-4-4-8 8z"/></svg></div><h4>High Return</h4><p>Secure your future with smart investments.</p></div>
+      <div class="w rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5zM9 14l2 2 4-4 1.4 1.4L11 18.8 7.6 15.4 9 14z"/></svg></div><h4>Clear Titles</h4><p>100% clear and verified documents.</p></div>
+      <div class="w rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4 0-8 2-8 5v3h16v-3c0-3-4-5-8-5z"/></svg></div><h4>Personal Service</h4><p>We understand your needs better.</p></div>
+      <div class="w rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 1a9 9 0 0 0-9 9v7a3 3 0 0 0 3 3h2v-8H5v-2a7 7 0 0 1 14 0v2h-3v8h3v1h-6v2h6a3 3 0 0 0 3-3V10a9 9 0 0 0-9-9z"/></svg></div><h4>After Sales Support</h4><p>We are always with you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="founder">
+  <div class="in rv">
+    <div class="k">Founder</div>
+    <h2 class="gold-text">Raghvendra Singh Chauhan</h2>
+    <div class="role">Founder, Karuna Prime Properties (Delhi NCR)</div>
+    <blockquote>"Your dream is our mission. Honest deals, clear titles, and a team that stays with you after the handover."</blockquote>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="in">
+    <h2 class="rv">Ready to find <span class="gold-text">your property?</span></h2>
+    <p class="rv">Message us on WhatsApp and we will share the best matching shops, flats, plots and villas for your budget.</p>
+    <a class="btn btn-gold rv" href="https://wa.me/918800492022?text=Hello%20Karuna%20Prime%20Properties%2C%20I%20am%20interested%20in%20a%20property.%20Please%20share%20options." target="_blank">
+      <svg viewBox="0 0 32 32"><path d="M16 2.7C8.7 2.7 2.8 8.6 2.8 15.9c0 2.6.7 5 2 7.1L2.7 29.3l6.5-1.7c2 1.1 4.3 1.7 6.7 1.7 7.3 0 13.2-5.9 13.2-13.2S23.2 2.7 16 2.7zm7.7 18.5c-.3.9-1.8 1.8-2.6 1.9-.7.1-1.6.2-5.1-1.5-4.2-2-6.9-6.5-7.1-6.8-.2-.3-1.7-2.3-1.7-4.4 0-2.1 1.1-3.1 1.5-3.5.4-.4.8-.5 1.1-.5h.8c.3 0 .6-.1 1 .7.3.8 1.1 2.8 1.2 3 .1.2.2.4 0 .7-.1.3-.2.5-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.8 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.8-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.4 1.1 2.8 1.3.4.2.7.3.8.5.1.2.1.8-.2 1.6z"/></svg>
+      Inquire via WhatsApp</a>
+    <div class="phone rv"><small>Call us now</small><a href="tel:+918800492022">88004 92022</a></div>
+    <div class="strip rv">Buy &nbsp;|&nbsp; Sell &nbsp;|&nbsp; Invest &nbsp;|&nbsp; Grow</div>
+  </div>
+</section>
+
+<footer>© 2026 Karuna Prime Properties · Delhi NCR · Serving You, Building Trust</footer>
+
+<a class="wa-float" href="https://wa.me/918800492022?text=Hello%20Karuna%20Prime%20Properties%2C%20I%20am%20interested%20in%20a%20property." target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 2.7C8.7 2.7 2.8 8.6 2.8 15.9c0 2.6.7 5 2 7.1L2.7 29.3l6.5-1.7c2 1.1 4.3 1.7 6.7 1.7 7.3 0 13.2-5.9 13.2-13.2S23.2 2.7 16 2.7zm7.7 18.5c-.3.9-1.8 1.8-2.6 1.9-.7.1-1.6.2-5.1-1.5-4.2-2-6.9-6.5-7.1-6.8-.2-.3-1.7-2.3-1.7-4.4 0-2.1 1.1-3.1 1.5-3.5.4-.4.8-.5 1.1-.5h.8c.3 0 .6-.1 1 .7.3.8 1.1 2.8 1.2 3 .1.2.2.4 0 .7-.1.3-.2.5-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.8 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.8-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.4 1.1 2.8 1.3.4.2.7.3.8.5.1.2.1.8-.2 1.6z"/></svg>
+</a>
+
+<script>
+  // Header on scroll
+  const hd = document.getElementById('hd');
+  addEventListener('scroll', () => hd.classList.toggle('sc', scrollY > 50), { passive:true });
+
+  // Hero title animation
+  const el = document.getElementById('title');
+  let d = .3;
+  [['KARUNA',false],['PRIME',true],['PROPERTIES',false]].forEach(([word, gold], wi, arr) => {
+    const wrap = document.createElement('span');
+    wrap.style.cssText = 'display:inline-block;white-space:pre';
+    [...word].forEach(c => {
+      const s = document.createElement('span');
+      s.className = 'ch' + (gold ? ' gold-text' : '');
+      s.textContent = c; s.style.animationDelay = (d += .045) + 's';
+      wrap.appendChild(s);
+    });
+    el.appendChild(wrap);
+    if (wi < arr.length-1) el.appendChild(document.createTextNode(' '));
+  });
+
+  // 3D helix
+  const items = [
+    { n:'Shop',  t:'Commercial',  d:'Prime commercial spaces',   img:'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80' },
+    { n:'Flat',  t:'Residential', d:'Modern comfort & luxury',   img:'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80' },
+    { n:'Plot',  t:'Land',        d:'Premium plots, bright future', img:'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=80' },
+    { n:'Villa', t:'Luxury',      d:'Premium lifestyle homes',   img:'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=80' },
+    { n:'Penthouse', t:'Sky Living', d:'Top-floor luxury',       img:'https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=1000&q=80' },
+    { n:'Duplex', t:'Residential', d:'Spacious two-level homes', img:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80' },
+  ];
+  const N = items.length, STEP = 360 / N;
+  const ring = document.getElementById('ring');
+  const R = () => Math.max(230, Math.min(380, innerWidth * .26));
+  items.forEach((e,i) => {
+    const c = document.createElement('div'); c.className = 'est';
+    c.innerHTML = `<div class="frame"><img src="${e.img}" alt="${e.n}"><div class="lab"><em>${String(i+1).padStart(2,'0')} — ${e.t}</em><h3>${e.n}</h3><p>${e.d}</p></div></div>`;
+    ring.appendChild(c);
+  });
+  const cards = [...ring.children];
+  const helix = document.querySelector('.helix');
+  const bar = document.getElementById('bar');
+  const nowName = document.getElementById('nowName');
+  const nowNum = document.getElementById('nowNum');
+  const ease = t => t<.5 ? 2*t*t : 1-Math.pow(-2*t+2,2)/2;
+  function drive() {
+    const r = helix.getBoundingClientRect();
+    const p = Math.min(1, Math.max(0, -r.top / (helix.offsetHeight - innerHeight)));
+    const spin = ease(p) * 360 * 1.8 + 20;
+    const radius = R();
+    ring.style.transform = `rotateY(${-spin}deg)`;
+    let best = 0, bd = 999;
+    cards.forEach((c,i) => {
+      const a = i*STEP + 20;
+      c.style.transform = `rotateY(${a}deg) translateZ(${radius}px) translateY(${(i-(N-1)/2)*14}px)`;
+      const rel = (((a - spin) % 360) + 360) % 360, ang = Math.min(rel, 360-rel);
+      c.style.opacity = ang > 100 ? 0 : Math.max(.25, 1 - ang/130);
+      if (ang < bd) { bd = ang; best = i; }
+    });
+    bar.style.width = (p*100) + '%';
+    nowName.textContent = items[best].n;
+    nowNum.textContent = String(best+1).padStart(2,'0') + ' / ' + String(N).padStart(2,'0');
+  }
+  addEventListener('scroll', drive, { passive:true });
+  addEventListener('resize', drive);
+  drive();
+
+  // Scroll reveals with stagger
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) {
+      const sibs = [...e.target.parentElement.children].filter(x => x.classList.contains('rv'));
+      e.target.style.transitionDelay = (Math.max(0, sibs.indexOf(e.target)) * .12) + 's';
+      e.target.classList.add('vis'); io.unobserve(e.target);
+    }
+  }), { threshold:.15 });
+  document.querySelectorAll('.rv').forEach(x => io.observe(x));
+</script>
+</body>
+</html>
